@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-10">
+    <header></header>
+    <main>
+        <!--main Content Container-->
+        <div class="flex flex-col md:flex-row ">
+            <!--Cards-->
+            <div class="flex-1  grid grid-cols-1 space-x-4 space-y-10 md:grid-cols-2 lg:grid-cols-3 ">
+                <div class="card hover:scale-105 hover:bg-slate-500 card-compact bg-base-100 w-72 shadow-xl ">
+                    <figure>
+                      <img
+                        src="images/triangle.png"
+                        alt="triangle.png" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title text-center">Triangle!</h2>
+                      <p class="text-center text-xl">Area (A) =
+                        0.5 X b X h</p>
+
+                        <div class="flex items-center">
+                            <input  class="w-24 text-xl p-2 rounded-md" type="text" name="" id="triangleBase" placeholder="b"> <span>cm</span>
+                            <input class="w-24 text-xl p-2 rounded-md" type="text" name="" id="triangleHeight" placeholder="h"> <span>cm</span>
+                        </div>
+                        <div>
+                          <p class="text-base mt-2 mb-2">Area : <span id="triangleArea"></span> <span>cm<sup>2</sup></span></p>
+                        </div>
+
+                      <div class="card-actions justify-end">
+                        <button onclick="CalculateTriangleArea()" class="btn btn-info w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card hover:scale-105 hover:bg-slate-500 card-compact bg-base-100 w-72 shadow-xl">
+                    <figure>
+                      <img
+                        src="images/rectangle.png"
+                        alt="triangle.png" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title text-center">Rectangle!</h2>
+                      <p class="text-center text-xl">Area (A) = w  X I</p>
+
+                        <div class="flex items-center">
+                            <input  class="w-24 text-xl p-2 rounded-md" type="text" name="" id="rectangleleWidth" placeholder="W"> <span>cm</span>
+                            <input class="w-24 text-xl p-2 rounded-md" type="text" name="" id="rectangleI" placeholder="I"> <span>cm</span>
+                        </div>
+                        <div>
+                          <p class="text-base mt-2 mb-2">Area : <span id="rectangleArea"></span> <span>cm<sup>2</sup></span></p>
+                        </div>
+
+                      <div class="card-actions justify-end">
+                        <button onclick="CalculateRectangale()" class="btn btn-info w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card hover:scale-105 hover:bg-slate-500 card-compact bg-base-100 w-72 shadow-xl">
+                    <figure>
+                      <img
+                        src="images/rhombus.png"
+                        alt="triangle.png" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title text-center">Rhombus!</h2>
+                      <p class="text-center text-xl">Area (A) =
+                        0.5 X d<sub>1</sub> X d<sub>2</sub>
+                        </p>
+
+                        <div class="flex items-center">
+                            <input  class="w-24 text-xl p-2 rounded-md" type="text" name="" id="rhombusd1" placeholder="d1"> <span>cm</span>
+                            <input class="w-24 text-xl p-2 rounded-md" type="text" name="" id="rhombusd2" placeholder="d2"> <span>cm</span>
+                        </div>
+                        <div>
+                          <p class="text-base mt-2 mb-2">Area : <span id="rhombusArea"></span> <span>cm<sup>2</sup></span></p>
+                        </div>
+
+                      <div class="card-actions justify-end">
+                        <button onclick=" CalculaterhombusArea()" class="btn btn-info w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card hover:scale-105 hover:bg-slate-500 card-compact bg-base-100 w-72 shadow-xl">
+                    <figure>
+                      <img
+                        src="images/ellipse.png"
+                        alt="triangle.png" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title text-center">Ellipse</h2>
+                      <p class="text-center items-center  flex text-xl">Area (A) =  <img class="w-2 h-4 ml-2 mr-2" src="/images/Vector.png" alt="">   ab</p>
+
+                        <div class="flex items-center">
+                            <input  class="w-24 text-xl p-2 rounded-md" type="text" name="" id="ellipseA" placeholder="a"> <span>cm</span>
+                            <input class="w-24 text-xl p-2 rounded-md" type="text" name="" id="ellipseB" placeholder="b"> <span>cm</span>
+                        </div>
+                        <div>
+                          <p class="text-base mt-2 mb-2">Area : <span id="ellipseArea"></span> <span>cm<sup>2</sup></span></p>
+                        </div>
+
+                      <div class="card-actions justify-end">
+                        <button onclick="CalculateEllipseArea()" class="btn btn-info w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                
+            </div>
+            <!--CalCulator-->
+            <div class="w-96 border-2 ">
+                <h1 class="text-3xl text-center">Umm Calculator Area</h1>
+            </div>
+        </div>
+    </main>
+    <script src="Scripts/Calculator.js"></script>
+</body>
+</html>
